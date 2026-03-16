@@ -1,0 +1,823 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-12-10 20:58+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/ContestantFinishtimesController.php:71
+msgid "The contestant has already finished the race. Nothing saved"
+msgstr ""
+
+#: Controller/ContestantFinishtimesController.php:97
+msgid "The contestant laps has been saved. Laps saved: "
+msgstr ""
+
+#: Controller/ContestantFinishtimesController.php:103;153
+msgid "The contestant finishtime has been saved."
+msgstr ""
+
+#: Controller/ContestantFinishtimesController.php:107;157
+msgid "The contestant finishtime could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ContestantFinishtimesController.php:178
+msgid "The contestant finishtime has been deleted."
+msgstr ""
+
+#: Controller/ContestantFinishtimesController.php:180
+msgid "The contestant finishtime could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ContestantLapsController.php:61;95
+msgid "The contestant lap has been saved."
+msgstr ""
+
+#: Controller/ContestantLapsController.php:65;99
+msgid "The contestant lap could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ContestantLapsController.php:120
+msgid "The contestant lap has been deleted."
+msgstr ""
+
+#: Controller/ContestantLapsController.php:122
+msgid "The contestant lap could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ContestantsController.php:55;81
+msgid "The contestant has been saved."
+msgstr ""
+
+#: Controller/ContestantsController.php:59;85
+msgid "The contestant could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ContestantsController.php:104
+msgid "The contestant has been deleted."
+msgstr ""
+
+#: Controller/ContestantsController.php:106
+msgid "The contestant could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/RaceContestantsController.php:86;159
+msgid "The race contestant could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/RaceContestantsController.php:121
+msgid "The race contestants saved:"
+msgstr ""
+
+#: Controller/RaceContestantsController.php:122
+msgid "The race contestants removed:"
+msgstr ""
+
+#: Controller/RaceContestantsController.php:155
+msgid "The race contestant has been saved."
+msgstr ""
+
+#: Controller/RaceContestantsController.php:182
+msgid "The race contestant has been deleted."
+msgstr ""
+
+#: Controller/RaceContestantsController.php:186
+msgid "The race contestant could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/RaceFinishtimesController.php:58;86
+msgid "The race finishtime has been saved."
+msgstr ""
+
+#: Controller/RaceFinishtimesController.php:62;90
+msgid "The race finishtime could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/RaceFinishtimesController.php:111
+msgid "The race finishtime has been deleted."
+msgstr ""
+
+#: Controller/RaceFinishtimesController.php:113
+msgid "The race finishtime could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/RacesController.php:55;81
+msgid "The race has been saved."
+msgstr ""
+
+#: Controller/RacesController.php:59;85
+msgid "The race could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/RacesController.php:104
+msgid "The race has been deleted."
+msgstr ""
+
+#: Controller/RacesController.php:106
+msgid "The race could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/StatisticsController.php:27
+msgid "Unable to find any race with the given criteria."
+msgstr ""
+
+#: Template/ContestantFinishtimes/add.ctp:3
+#: Template/ContestantFinishtimes/edit.ctp:3
+#: Template/ContestantFinishtimes/index.ctp:3;20
+#: Template/ContestantFinishtimes/view.ctp:3
+#: Template/ContestantLaps/add.ctp:3
+#: Template/ContestantLaps/edit.ctp:3
+#: Template/ContestantLaps/index.ctp:3;15
+#: Template/ContestantLaps/view.ctp:3
+#: Template/Contestants/add.ctp:3
+#: Template/Contestants/edit.ctp:3
+#: Template/Contestants/index.ctp:3;16
+#: Template/Contestants/view.ctp:3
+#: Template/RaceContestants/add.ctp:3
+#: Template/RaceContestants/edit.ctp:3
+#: Template/RaceContestants/index.ctp:3;15
+#: Template/RaceContestants/view.ctp:3
+#: Template/Races/add.ctp:3
+#: Template/Races/edit.ctp:3
+#: Template/Races/index.ctp:3;17
+#: Template/Races/view.ctp:3;43;69;94
+#: Template/Statistics/index.ctp:3;15
+#: Template/Statistics/view.ctp:3;15;49
+msgid "Actions"
+msgstr ""
+
+#: Template/ContestantFinishtimes/add.ctp:4
+#: Template/ContestantFinishtimes/edit.ctp:10
+#: Template/ContestantFinishtimes/view.ctp:6
+msgid "List Contestant Finishtimes"
+msgstr ""
+
+#: Template/ContestantFinishtimes/add.ctp:5
+#: Template/ContestantFinishtimes/edit.ctp:11
+#: Template/ContestantFinishtimes/index.ctp:5
+#: Template/ContestantFinishtimes/view.ctp:8
+#: Template/Contestants/add.ctp:4
+#: Template/Contestants/edit.ctp:10
+#: Template/Contestants/view.ctp:6
+#: Template/RaceContestants/edit.ctp:13
+msgid "List Contestants"
+msgstr ""
+
+#: Template/ContestantFinishtimes/add.ctp:6
+#: Template/ContestantFinishtimes/edit.ctp:12
+#: Template/ContestantFinishtimes/index.ctp:6
+#: Template/ContestantFinishtimes/view.ctp:9
+#: Template/Contestants/index.ctp:4
+#: Template/Contestants/view.ctp:7
+#: Template/RaceContestants/edit.ctp:14
+msgid "New Contestant"
+msgstr ""
+
+#: Template/ContestantFinishtimes/add.ctp:7
+#: Template/ContestantFinishtimes/edit.ctp:13
+#: Template/ContestantFinishtimes/index.ctp:7
+#: Template/ContestantFinishtimes/view.ctp:10
+#: Template/RaceContestants/edit.ctp:11
+#: Template/Races/add.ctp:4
+#: Template/Races/edit.ctp:10
+#: Template/Races/view.ctp:6
+msgid "List Races"
+msgstr ""
+
+#: Template/ContestantFinishtimes/add.ctp:8
+#: Template/ContestantFinishtimes/edit.ctp:14
+#: Template/ContestantFinishtimes/index.ctp:8
+#: Template/ContestantFinishtimes/view.ctp:11
+#: Template/RaceContestants/edit.ctp:12
+#: Template/Races/index.ctp:4
+#: Template/Races/view.ctp:7
+msgid "New Race"
+msgstr ""
+
+#: Template/ContestantFinishtimes/add.ctp:12
+msgid "NOTE:"
+msgstr ""
+
+#: Template/ContestantFinishtimes/add.ctp:12
+msgid "The automatic timer has stopped due to manual intervention of the timestamp. To start timer again please reload this page."
+msgstr ""
+
+#: Template/ContestantFinishtimes/add.ctp:21
+msgid "Add Contestant Finishtime"
+msgstr ""
+
+#: Template/ContestantFinishtimes/add.ctp:25
+#: Template/RaceContestants/add.ctp:16
+msgid "race_id"
+msgstr ""
+
+#: Template/ContestantFinishtimes/add.ctp:27
+msgid "Enter laps"
+msgstr ""
+
+#: Template/ContestantFinishtimes/add.ctp:29
+msgid "Laps Count"
+msgstr ""
+
+#: Template/ContestantFinishtimes/add.ctp:33
+#: Template/ContestantFinishtimes/edit.ctp:27
+#: Template/ContestantLaps/add.ctp:25
+#: Template/ContestantLaps/edit.ctp:22
+#: Template/Contestants/add.ctp:18
+#: Template/Contestants/edit.ctp:24
+#: Template/RaceContestants/add.ctp:23
+#: Template/RaceContestants/edit.ctp:26
+#: Template/Races/add.ctp:18
+#: Template/Races/edit.ctp:24
+#: View/Helper/FormHelper.php:1822
+msgid "Submit"
+msgstr ""
+
+#: Template/ContestantFinishtimes/edit.ctp:5
+#: Template/ContestantFinishtimes/index.ctp:33
+#: Template/ContestantLaps/edit.ctp:5
+#: Template/ContestantLaps/index.ctp:27
+#: Template/Contestants/edit.ctp:5
+#: Template/Contestants/index.ctp:29
+#: Template/RaceContestants/edit.ctp:5
+#: Template/RaceContestants/index.ctp:27
+#: Template/Races/edit.ctp:5
+#: Template/Races/index.ctp:31
+#: Template/Races/view.ctp:54;79;104
+msgid "Delete"
+msgstr ""
+
+#: Template/ContestantFinishtimes/edit.ctp:7
+#: Template/ContestantFinishtimes/index.ctp:33
+#: Template/ContestantFinishtimes/view.ctp:5
+#: Template/ContestantLaps/edit.ctp:7
+#: Template/ContestantLaps/index.ctp:27
+#: Template/ContestantLaps/view.ctp:5
+#: Template/Contestants/edit.ctp:7
+#: Template/Contestants/index.ctp:29
+#: Template/Contestants/view.ctp:5
+#: Template/RaceContestants/edit.ctp:7
+#: Template/RaceContestants/index.ctp:27
+#: Template/RaceContestants/view.ctp:5
+#: Template/Races/edit.ctp:7
+#: Template/Races/index.ctp:31
+#: Template/Races/view.ctp:5;54;79;104
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/ContestantFinishtimes/edit.ctp:20
+#: Template/ContestantFinishtimes/view.ctp:4
+msgid "Edit Contestant Finishtime"
+msgstr ""
+
+#: Template/ContestantFinishtimes/index.ctp:4
+#: Template/ContestantFinishtimes/view.ctp:7
+msgid "New Contestant Finishtime"
+msgstr ""
+
+#: Template/ContestantFinishtimes/index.ctp:12
+msgid "Contestant Finishtimes"
+msgstr ""
+
+#: Template/ContestantFinishtimes/index.ctp:31
+#: Template/ContestantLaps/index.ctp:25
+#: Template/Contestants/index.ctp:27
+#: Template/RaceContestants/index.ctp:25
+#: Template/Races/index.ctp:29
+#: Template/Races/view.ctp:52;77;102
+#: Template/Statistics/index.ctp:26
+msgid "View"
+msgstr ""
+
+#: Template/ContestantFinishtimes/index.ctp:32
+#: Template/ContestantLaps/index.ctp:26
+#: Template/Contestants/index.ctp:28
+#: Template/RaceContestants/index.ctp:26
+#: Template/Races/index.ctp:30
+#: Template/Races/view.ctp:53;78;103
+msgid "Edit"
+msgstr ""
+
+#: Template/ContestantFinishtimes/index.ctp:41
+#: Template/ContestantLaps/index.ctp:35
+#: Template/Contestants/index.ctp:37
+#: Template/RaceContestants/index.ctp:35
+#: Template/Races/index.ctp:39
+msgid "previous"
+msgstr ""
+
+#: Template/ContestantFinishtimes/index.ctp:43
+#: Template/ContestantLaps/index.ctp:37
+#: Template/Contestants/index.ctp:39
+#: Template/RaceContestants/index.ctp:37
+#: Template/Races/index.ctp:41
+msgid "next"
+msgstr ""
+
+#: Template/ContestantFinishtimes/view.ctp:5
+msgid "Delete Contestant Finishtime"
+msgstr ""
+
+#: Template/ContestantFinishtimes/view.ctp:18
+#: Template/ContestantLaps/view.ctp:14
+#: Template/RaceContestants/view.ctp:17
+msgid "Contestant"
+msgstr ""
+
+#: Template/ContestantFinishtimes/view.ctp:22
+#: Template/ContestantLaps/view.ctp:18
+#: Template/RaceContestants/view.ctp:13
+msgid "Race"
+msgstr ""
+
+#: Template/ContestantFinishtimes/view.ctp:26
+#: Template/ContestantLaps/view.ctp:22
+#: Template/Contestants/view.ctp:14
+#: Template/RaceContestants/view.ctp:21
+#: Template/Races/view.ctp:18;39;66;91
+msgid "Id"
+msgstr ""
+
+#: Template/ContestantFinishtimes/view.ctp:30
+#: Template/Races/view.ctp:42
+msgid "Finishtime"
+msgstr ""
+
+#: Template/ContestantLaps/add.ctp:4
+#: Template/ContestantLaps/edit.ctp:10
+#: Template/ContestantLaps/view.ctp:6
+msgid "List Contestant Laps"
+msgstr ""
+
+#: Template/ContestantLaps/add.ctp:19
+msgid "Add Contestant Lap"
+msgstr ""
+
+#: Template/ContestantLaps/edit.ctp:16
+#: Template/ContestantLaps/view.ctp:4
+msgid "Edit Contestant Lap"
+msgstr ""
+
+#: Template/ContestantLaps/index.ctp:4
+#: Template/ContestantLaps/view.ctp:7
+msgid "New Contestant Lap"
+msgstr ""
+
+#: Template/ContestantLaps/index.ctp:8
+msgid "Contestant Laps"
+msgstr ""
+
+#: Template/ContestantLaps/view.ctp:5
+msgid "Delete Contestant Lap"
+msgstr ""
+
+#: Template/Contestants/add.ctp:10
+msgid "Add Contestant"
+msgstr ""
+
+#: Template/Contestants/add.ctp:12
+#: Template/Contestants/edit.ctp:18
+msgid "Barcode"
+msgstr ""
+
+#: Template/Contestants/edit.ctp:16
+#: Template/Contestants/view.ctp:4
+msgid "Edit Contestant"
+msgstr ""
+
+#: Template/Contestants/index.ctp:8
+#: Template/Layout/default.ctp:48
+#: Template/Statistics/view.ctp:40
+msgid "Contestants"
+msgstr ""
+
+#: Template/Contestants/view.ctp:5
+msgid "Delete Contestant"
+msgstr ""
+
+#: Template/Contestants/view.ctp:18
+#: Template/Races/view.ctp:14
+msgid "Name"
+msgstr ""
+
+#: Template/Contestants/view.ctp:22
+#: Template/Statistics/view.ctp:8
+msgid "Team"
+msgstr ""
+
+#: Template/Contestants/view.ctp:26
+#: Template/Races/view.ctp:30
+msgid "Active"
+msgstr ""
+
+#: Template/Contestants/view.ctp:27
+#: Template/Races/view.ctp:31
+msgid "Yes"
+msgstr ""
+
+#: Template/Contestants/view.ctp:27
+#: Template/Races/view.ctp:31
+msgid "No"
+msgstr ""
+
+#: Template/Layout/default.ctp:46
+#: Template/Races/index.ctp:8
+msgid "Races"
+msgstr ""
+
+#: Template/Layout/default.ctp:47
+#: Template/RaceContestants/index.ctp:8
+msgid "Race Contestants"
+msgstr ""
+
+#: Template/Layout/default.ctp:49
+msgid "Contestants Laps"
+msgstr ""
+
+#: Template/Layout/default.ctp:50
+msgid "Contestans finishtimes"
+msgstr ""
+
+#: Template/Layout/default.ctp:51
+msgid "Statistics"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/RaceContestants/add.ctp:4
+#: Template/RaceContestants/edit.ctp:10
+#: Template/RaceContestants/view.ctp:6
+msgid "List Race Contestants"
+msgstr ""
+
+#: Template/RaceContestants/add.ctp:14
+msgid "Add Race Contestant"
+msgstr ""
+
+#: Template/RaceContestants/add.ctp:18
+msgid "Add"
+msgstr ""
+
+#: Template/RaceContestants/add.ctp:19
+msgid "Remove"
+msgstr ""
+
+#: Template/RaceContestants/edit.ctp:20
+#: Template/RaceContestants/view.ctp:4
+msgid "Edit Race Contestant"
+msgstr ""
+
+#: Template/RaceContestants/index.ctp:4
+msgid "Modify Race Contestant"
+msgstr ""
+
+#: Template/RaceContestants/view.ctp:5
+msgid "Delete Race Contestant"
+msgstr ""
+
+#: Template/Races/add.ctp:10
+msgid "Add Race"
+msgstr ""
+
+#: Template/Races/edit.ctp:16
+#: Template/Races/view.ctp:4
+msgid "Edit Race"
+msgstr ""
+
+#: Template/Races/view.ctp:5
+msgid "Delete Race"
+msgstr ""
+
+#: Template/Races/view.ctp:22
+msgid "Starttime"
+msgstr ""
+
+#: Template/Races/view.ctp:26
+msgid "Endtime"
+msgstr ""
+
+#: Template/Races/view.ctp:35
+msgid "Related Contestant Finishtimes"
+msgstr ""
+
+#: Template/Races/view.ctp:40;67;93
+msgid "Contestant Id"
+msgstr ""
+
+#: Template/Races/view.ctp:41;68;92
+msgid "Race Id"
+msgstr ""
+
+#: Template/Races/view.ctp:62
+msgid "Related Contestant Laps"
+msgstr ""
+
+#: Template/Races/view.ctp:87
+msgid "Related Race Contestants"
+msgstr ""
+
+#: Template/Statistics/index.ctp:7
+msgid "Race statistics"
+msgstr ""
+
+#: Template/Statistics/index.ctp:13
+msgid "starttime"
+msgstr ""
+
+#: Template/Statistics/index.ctp:14
+msgid "endtime"
+msgstr ""
+
+#: Template/Statistics/view.ctp:4
+msgid "Statistics overview"
+msgstr ""
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+
+#: Controller/Component/AuthComponent.php:464
+msgid "You are not authorized to access that location."
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:155
+msgid "Missing CSRF token cookie"
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:159
+msgid "CSRF token mismatch."
+msgstr ""
+
+#: Error/ExceptionRenderer.php:251
+msgid "Not Found"
+msgstr ""
+
+#: Error/ExceptionRenderer.php:253
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: I18n/Number.php:90
+msgid "{0,number,#,###.##} KB"
+msgstr ""
+
+#: I18n/Number.php:92
+msgid "{0,number,#,###.##} MB"
+msgstr ""
+
+#: I18n/Number.php:94
+msgid "{0,number,#,###.##} GB"
+msgstr ""
+
+#: I18n/Number.php:96
+msgid "{0,number,#,###.##} TB"
+msgstr ""
+
+#: I18n/Number.php:88
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} from now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} after"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} before"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:154;332
+msgid "about a day ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:155;333
+msgid "about a week ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:156;334
+msgid "about a month ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:157;335
+msgid "about a year ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:171;346
+msgid "in about a day"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:172;347
+msgid "in about a week"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:173;348
+msgid "in about a month"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:174;349
+msgid "in about a year"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:371
+msgid "on %s"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:47;126;316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:51;129;319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:57;132;322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:59;135;325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:64;138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:68;141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:72;144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Network/Response.php:1473
+msgid "The requested file was not found"
+msgstr ""
+
+#: ORM/RulesChecker.php:57
+msgid "This value is already in use"
+msgstr ""
+
+#: ORM/RulesChecker.php:104
+msgid "This value does not exist"
+msgstr ""
+
+#: ORM/RulesChecker.php:128
+msgid "The count does not match {0}{1}"
+msgstr ""
+
+#: Utility/Text.php:894
+msgid "and"
+msgstr ""
+
+#: Validation/Validator.php:103
+msgid "This field is required"
+msgstr ""
+
+#: Validation/Validator.php:104
+msgid "This field cannot be left empty"
+msgstr ""
+
+#: Validation/Validator.php:1712
+msgid "The provided value is invalid"
+msgstr ""
+
+#: View/Helper/FormHelper.php:973
+msgid "New %s"
+msgstr ""
+
+#: View/Helper/FormHelper.php:976
+msgid "Edit %s"
+msgstr ""
+
+#: View/Helper/HtmlHelper.php:791
+msgid "Home"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:540
+msgid "January"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:541
+msgid "February"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:542
+msgid "March"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:543
+msgid "April"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:544
+msgid "May"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:545
+msgid "June"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:546
+msgid "July"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:547
+msgid "August"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:548
+msgid "September"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:549
+msgid "October"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:550
+msgid "November"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:551
+msgid "December"
+msgstr ""
+
