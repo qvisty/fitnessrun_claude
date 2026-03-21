@@ -6,7 +6,7 @@
 @if(session('undo_lap_id'))
 <div class="alert alert-success">
     {{ session('success') }}
-    <form class="inline" method="POST" action="{{ route('contestant-laps.destroy', session('undo_lap_id')) }}" style="display:inline">
+    <form class="inline" method="POST" action="{{ route('contestant-laps.destroy', session('undo_lap_id')) }}?from=create" style="display:inline">
         @csrf @method('DELETE')
         <button type="submit" class="btn btn-secondary" style="margin-left:10px;">Undo</button>
     </form>

@@ -55,9 +55,15 @@ class ContestantLapController extends Controller
         ]);
     }
 
-    public function destroy(ContestantLap $contestantLap)
+    public function destroy(ContestantLap $contestantLap, Request $request)
     {
+        $raceId = $contestantLap->race_id;
         $contestantLap->delete();
+
+        if ($request->query('from') === 'create') {
+            return redirect()->route('contestant-laps.create', ['activerace' => $raceId])
+                ->with('success', 'The contestant lap has been deleted.');
+        }
         return redirect()->route('contestant-laps.index')->with('success', 'The contestant lap has been deleted.');
     }
 }
