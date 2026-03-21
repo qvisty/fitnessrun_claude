@@ -22,10 +22,10 @@
         <input type="datetime-local" name="finishtime" value="{{ old('finishtime', $contestantFinishtime->finishtime?->format('Y-m-d\TH:i:s')) }}" step="1" required>
     </fieldset>
     <button type="submit" class="btn">Save</button>
-    <form class="inline" method="POST" action="{{ route('contestant-finishtimes.destroy', $contestantFinishtime) }}" onsubmit="return confirm('Delete?')">
-        @csrf @method('DELETE')
-        <button type="submit" class="btn btn-danger">Delete</button>
-    </form>
     <a href="{{ route('contestant-finishtimes.index') }}" class="btn btn-secondary">Cancel</a>
+</form>
+<form method="POST" action="{{ route('contestant-finishtimes.destroy', $contestantFinishtime) }}" onsubmit="return confirm('Delete?')" style="display:inline">
+    @csrf @method('DELETE')
+    <button type="submit" class="btn btn-danger">Delete</button>
 </form>
 @endsection

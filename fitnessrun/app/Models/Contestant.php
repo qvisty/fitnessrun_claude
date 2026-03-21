@@ -34,4 +34,9 @@ class Contestant extends Model
     {
         return $this->belongsToMany(Race::class, 'race_contestants');
     }
+
+    public function raceFinishtimes()
+    {
+        return $this->hasMany(RaceFinishtime::class);
+    }
 }

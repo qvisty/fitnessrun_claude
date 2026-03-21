@@ -20,10 +20,10 @@
         </select>
     </fieldset>
     <button type="submit" class="btn">Save</button>
-    <form class="inline" method="POST" action="{{ route('contestant-laps.destroy', $contestantLap) }}" onsubmit="return confirm('Delete?')">
-        @csrf @method('DELETE')
-        <button type="submit" class="btn btn-danger">Delete</button>
-    </form>
     <a href="{{ route('contestant-laps.index') }}" class="btn btn-secondary">Cancel</a>
+</form>
+<form method="POST" action="{{ route('contestant-laps.destroy', $contestantLap) }}" onsubmit="return confirm('Delete?')" style="display:inline">
+    @csrf @method('DELETE')
+    <button type="submit" class="btn btn-danger">Delete</button>
 </form>
 @endsection
