@@ -14,16 +14,22 @@ Route::get('/', fn() => redirect()->route('races.index'));
 Route::resource('races', RaceController::class);
 Route::resource('contestants', ContestantController::class);
 
-// Contestant Laps: index, create/store, delete
+// Contestant Laps: full CRUD
 Route::get('/contestant-laps', [ContestantLapController::class, 'index'])->name('contestant-laps.index');
 Route::get('/contestant-laps/create', [ContestantLapController::class, 'create'])->name('contestant-laps.create');
 Route::post('/contestant-laps', [ContestantLapController::class, 'store'])->name('contestant-laps.store');
+Route::get('/contestant-laps/{contestantLap}', [ContestantLapController::class, 'show'])->name('contestant-laps.show');
+Route::get('/contestant-laps/{contestantLap}/edit', [ContestantLapController::class, 'edit'])->name('contestant-laps.edit');
+Route::put('/contestant-laps/{contestantLap}', [ContestantLapController::class, 'update'])->name('contestant-laps.update');
 Route::delete('/contestant-laps/{contestantLap}', [ContestantLapController::class, 'destroy'])->name('contestant-laps.destroy');
 
-// Contestant Finishtimes: index, create/store, delete
+// Contestant Finishtimes: full CRUD
 Route::get('/contestant-finishtimes', [ContestantFinishtimeController::class, 'index'])->name('contestant-finishtimes.index');
 Route::get('/contestant-finishtimes/create', [ContestantFinishtimeController::class, 'create'])->name('contestant-finishtimes.create');
 Route::post('/contestant-finishtimes', [ContestantFinishtimeController::class, 'store'])->name('contestant-finishtimes.store');
+Route::get('/contestant-finishtimes/{contestantFinishtime}', [ContestantFinishtimeController::class, 'show'])->name('contestant-finishtimes.show');
+Route::get('/contestant-finishtimes/{contestantFinishtime}/edit', [ContestantFinishtimeController::class, 'edit'])->name('contestant-finishtimes.edit');
+Route::put('/contestant-finishtimes/{contestantFinishtime}', [ContestantFinishtimeController::class, 'update'])->name('contestant-finishtimes.update');
 Route::delete('/contestant-finishtimes/{contestantFinishtime}', [ContestantFinishtimeController::class, 'destroy'])->name('contestant-finishtimes.destroy');
 
 // Race Contestants

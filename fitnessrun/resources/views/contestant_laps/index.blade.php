@@ -19,6 +19,8 @@
             <td>{{ $lap->race->name ?? $lap->race_id }}</td>
             <td>{{ $lap->created_at }}</td>
             <td>
+                <a href="{{ route('contestant-laps.show', $lap) }}" class="btn btn-secondary">View</a>
+                <a href="{{ route('contestant-laps.edit', $lap) }}" class="btn">Edit</a>
                 <form class="inline" method="POST" action="{{ route('contestant-laps.destroy', $lap) }}" onsubmit="return confirm('Delete this lap?')">
                     @csrf @method('DELETE')
                     <button type="submit" class="btn btn-danger">Delete</button>

@@ -67,6 +67,30 @@ class ContestantFinishtimeController extends Controller
             ->with('success', 'The contestant finishtime has been saved.');
     }
 
+    public function show(ContestantFinishtime $contestantFinishtime)
+    {
+        $contestantFinishtime->load(['contestant', 'race']);
+        return view('contestant_finishtimes.show', compact('contestantFinishtime'));
+    }
+
+    public function edit(ContestantFinishtime $contestantFinishtime)
+    {
+        $contestants = Contestant::pluck('name', 'id');
+        $races = Race::pluck('name', 'id');
+        return view('contestant_finishtimes.edit', compact('contestantFinishtime', 'contestants', 'races'));
+    }
+
+    public function update(Request $request, ContestantFinishtime $contestantFinishtime)
+    {
+        $validated = $request->validate([
+            'contestant_id' => 'required|exists:contestants,id',
+            'race_id' => 'required|exists:races,id',
+            'finishtime' => 'required|date',
+        ]);
+        $contestantFinishtime->update($validated);
+        return redirect()->route('contestant-finishtimes.index')->with('success', 'The contestant finishtime has been saved.');
+    }
+
     public function destroy(ContestantFinishtime $contestantFinishtime)
     {
         $contestantFinishtime->delete();

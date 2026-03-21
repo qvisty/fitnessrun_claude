@@ -19,6 +19,8 @@
             <td>{{ $ft->race->name ?? $ft->race_id }}</td>
             <td>{{ $ft->finishtime }}</td>
             <td>
+                <a href="{{ route('contestant-finishtimes.show', $ft) }}" class="btn btn-secondary">View</a>
+                <a href="{{ route('contestant-finishtimes.edit', $ft) }}" class="btn">Edit</a>
                 <form class="inline" method="POST" action="{{ route('contestant-finishtimes.destroy', $ft) }}" onsubmit="return confirm('Delete?')">
                     @csrf @method('DELETE')
                     <button type="submit" class="btn btn-danger">Delete</button>

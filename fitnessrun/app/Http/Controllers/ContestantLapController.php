@@ -55,6 +55,29 @@ class ContestantLapController extends Controller
         ]);
     }
 
+    public function show(ContestantLap $contestantLap)
+    {
+        $contestantLap->load(['contestant', 'race']);
+        return view('contestant_laps.show', compact('contestantLap'));
+    }
+
+    public function edit(ContestantLap $contestantLap)
+    {
+        $contestants = Contestant::pluck('name', 'id');
+        $races = Race::pluck('name', 'id');
+        return view('contestant_laps.edit', compact('contestantLap', 'contestants', 'races'));
+    }
+
+    public function update(Request $request, ContestantLap $contestantLap)
+    {
+        $validated = $request->validate([
+            'contestant_id' => 'required|exists:contestants,id',
+            'race_id' => 'required|exists:races,id',
+        ]);
+        $contestantLap->update($validated);
+        return redirect()->route('contestant-laps.create')->with('success', 'The contestant lap has been saved.');
+    }
+
     public function destroy(ContestantLap $contestantLap, Request $request)
     {
         $raceId = $contestantLap->race_id;
