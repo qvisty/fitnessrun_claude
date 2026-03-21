@@ -15,6 +15,35 @@ class RaceContestantController extends Controller
         return view('race_contestants.index', compact('raceContestants'));
     }
 
+    public function show(RaceContestant $raceContestant)
+    {
+        $raceContestant->load(['race', 'contestant']);
+        return view('race_contestants.show', compact('raceContestant'));
+    }
+
+    public function edit(RaceContestant $raceContestant)
+    {
+        $races = Race::pluck('name', 'id');
+        $contestants = Contestant::pluck('name', 'id');
+        return view('race_contestants.edit', compact('raceContestant', 'races', 'contestants'));
+    }
+
+    public function editUpdate(Request $request, RaceContestant $raceContestant)
+    {
+        $validated = $request->validate([
+            'race_id' => 'required|exists:races,id',
+            'contestant_id' => 'required|exists:contestants,id',
+        ]);
+        $raceContestant->update($validated);
+        return redirect()->route('race-contestants.index')->with('success', 'The race contestant has been saved.');
+    }
+
+    public function destroy(RaceContestant $raceContestant)
+    {
+        $raceContestant->delete();
+        return redirect()->route('race-contestants.index')->with('success', 'The race contestant has been deleted.');
+    }
+
     public function manage(Request $request)
     {
         $activeRace = $request->query('activerace');

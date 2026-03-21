@@ -36,6 +36,10 @@ Route::delete('/contestant-finishtimes/{contestantFinishtime}', [ContestantFinis
 Route::get('/race-contestants', [RaceContestantController::class, 'index'])->name('race-contestants.index');
 Route::get('/race-contestants/manage', [RaceContestantController::class, 'manage'])->name('race-contestants.manage');
 Route::post('/race-contestants/update', [RaceContestantController::class, 'update'])->name('race-contestants.update');
+Route::get('/race-contestants/{raceContestant}', [RaceContestantController::class, 'show'])->name('race-contestants.show');
+Route::get('/race-contestants/{raceContestant}/edit', [RaceContestantController::class, 'edit'])->name('race-contestants.edit');
+Route::put('/race-contestants/{raceContestant}', [RaceContestantController::class, 'editUpdate'])->name('race-contestants.edit-update');
+Route::delete('/race-contestants/{raceContestant}', [RaceContestantController::class, 'destroy'])->name('race-contestants.destroy');
 
 // Race Finishtimes
 Route::resource('race-finishtimes', RaceFinishtimeController::class)->except(['show']);
