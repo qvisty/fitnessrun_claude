@@ -10,5 +10,9 @@
 </table>
 <br>
 <a href="{{ route('contestants.edit', $contestant) }}" class="btn">Edit</a>
+<form class="inline" method="POST" action="{{ route('contestants.destroy', $contestant) }}" onsubmit="return confirm('Delete this contestant?')">
+    @csrf @method('DELETE')
+    <button type="submit" class="btn btn-danger">Delete</button>
+</form>
 <a href="{{ route('contestants.index') }}" class="btn btn-secondary">Back</a>
 @endsection
