@@ -33,6 +33,11 @@ class RaceFinishtimeController extends Controller
         return redirect()->route('race-finishtimes.index')->with('success', 'The race finishtime has been saved.');
     }
 
+    public function show(RaceFinishtime $raceFinishtime)
+    {
+        return view('race_finishtimes.show', compact('raceFinishtime'));
+    }
+
     public function edit(RaceFinishtime $raceFinishtime)
     {
         $contestants = Contestant::pluck('name', 'id');

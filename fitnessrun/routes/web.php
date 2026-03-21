@@ -42,7 +42,7 @@ Route::put('/race-contestants/{raceContestant}', [RaceContestantController::clas
 Route::delete('/race-contestants/{raceContestant}', [RaceContestantController::class, 'destroy'])->name('race-contestants.destroy');
 
 // Race Finishtimes
-Route::resource('race-finishtimes', RaceFinishtimeController::class)->except(['show']);
+Route::resource('race-finishtimes', RaceFinishtimeController::class);
 
 // Statistics
 Route::get('/statistics', [StatisticsController::class, 'index'])->name('statistics.index');
