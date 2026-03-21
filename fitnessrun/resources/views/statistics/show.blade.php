@@ -19,10 +19,7 @@
             <td>{{ $team['name'] }}</td>
             <td>{{ $team['lapscount'] }}</td>
             <td>
-                @php
-                    $s = $team['time'];
-                    printf('%02d:%02d:%02d', floor($s/3600), floor($s/60%60), $s%60);
-                @endphp
+                {{ sprintf('%02d:%02d:%02d', floor($team['time']/3600), floor($team['time']/60%60), $team['time']%60) }}
             </td>
         </tr>
         @endforeach
@@ -42,10 +39,7 @@
             <td>{{ $contestant['team'] }}</td>
             <td>{{ $contestant['lapscount'] }}</td>
             <td>
-                @php
-                    $s = $contestant['time'];
-                    printf('%02d:%02d:%02d', floor($s/3600), floor($s/60%60), $s%60);
-                @endphp
+                {{ sprintf('%02d:%02d:%02d', floor($contestant['time']/3600), floor($contestant['time']/60%60), $contestant['time']%60) }}
             </td>
         </tr>
         @endforeach
