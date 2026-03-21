@@ -52,6 +52,25 @@
     </tbody>
 </table>
 
+@if(count($runningContestants) > 0)
+<h3>Still Running ({{ count($runningContestants) }})</h3>
+<table>
+    <thead>
+        <tr><th>ID</th><th>Name</th><th>Team</th><th>Laps so far</th></tr>
+    </thead>
+    <tbody>
+        @foreach($runningContestants as $rc)
+        <tr>
+            <td>{{ $rc['id'] }}</td>
+            <td>{{ $rc['name'] }}</td>
+            <td>{{ $rc['team'] }}</td>
+            <td>{{ $rc['lapscount'] }}</td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>
+@endif
+
 <script>
 var countDown = 60;
 setInterval(function() {

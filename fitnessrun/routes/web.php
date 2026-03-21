@@ -5,6 +5,7 @@ use App\Http\Controllers\ContestantFinishtimeController;
 use App\Http\Controllers\ContestantLapController;
 use App\Http\Controllers\RaceContestantController;
 use App\Http\Controllers\RaceController;
+use App\Http\Controllers\RaceFinishtimeController;
 use App\Http\Controllers\StatisticsController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,9 @@ Route::delete('/contestant-finishtimes/{contestantFinishtime}', [ContestantFinis
 Route::get('/race-contestants', [RaceContestantController::class, 'index'])->name('race-contestants.index');
 Route::get('/race-contestants/manage', [RaceContestantController::class, 'manage'])->name('race-contestants.manage');
 Route::post('/race-contestants/update', [RaceContestantController::class, 'update'])->name('race-contestants.update');
+
+// Race Finishtimes
+Route::resource('race-finishtimes', RaceFinishtimeController::class)->except(['show']);
 
 // Statistics
 Route::get('/statistics', [StatisticsController::class, 'index'])->name('statistics.index');

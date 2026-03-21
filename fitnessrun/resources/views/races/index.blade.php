@@ -22,7 +22,7 @@
             <td>
                 <a href="{{ route('races.show', $race) }}" class="btn btn-secondary">View</a>
                 <a href="{{ route('races.edit', $race) }}" class="btn">Edit</a>
-                <form class="inline" method="POST" action="{{ route('races.destroy', $race) }}" onsubmit="return confirm('Delete this race?')">
+                <form class="inline" method="POST" action="{{ route('races.destroy', $race) }}" onsubmit="return confirm('Delete this race? This will remove all related data like laps and finishtimes.')">
                     @csrf @method('DELETE')
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </form>

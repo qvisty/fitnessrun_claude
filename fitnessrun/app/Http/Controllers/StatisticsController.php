@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\ContestantFinishtime;
 use App\Models\ContestantLap;
 use App\Models\Race;
+use App\Models\RaceContestant;
 use Illuminate\Http\Request;
 
 class StatisticsController extends Controller
@@ -87,6 +88,26 @@ class StatisticsController extends Controller
             session()->flash('info', 'No contestants that have finished this race yet.');
         }
 
-        return view('statistics.show', compact('contestants', 'teamStats', 'race'));
+        // Contestants still running: registered for race but no finishtime yet
+        $finishedIds = array_column($contestants, 'id');
+        $runningContestants = RaceContestant::where('race_id', $raceId)
+            ->with('contestant')
+            ->get()
+            ->filter(fn($rc) => !in_array($rc->contestant_id, $finishedIds))
+            ->map(function ($rc) use ($raceId) {
+                return [
+                    'id' => $rc->contestant_id,
+                    'name' => $rc->contestant->name,
+                    'team' => $rc->contestant->team ?: 'Unknown',
+                    'lapscount' => ContestantLap::where('contestant_id', $rc->contestant_id)
+                        ->where('race_id', $raceId)
+                        ->count(),
+                ];
+            })
+            ->sortByDesc('lapscount')
+            ->values()
+            ->all();
+
+        return view('statistics.show', compact('contestants', 'teamStats', 'race', 'runningContestants'));
     }
 }
